@@ -1,0 +1,1730 @@
+{
+  "canvasSize": {
+    "width": 860,
+    "height": 18804
+  },
+  "backgroundColor": "#FFFFFF",
+  "elements": [
+    {
+      "id": "bg-gradient-1749864145548",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "상단 배경 그라데이션",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 860,
+        "height": 745
+      },
+      "rotation": 0,
+      "zIndex": 5,
+      "backgroundColor": "#000000",
+      "borderColor": "transparent",
+      "borderWidth": 6,
+      "borderStyle": "none",
+      "borderRadius": 0,
+      "opacity": 0.63,
+      "gradientEnabled": true,
+      "gradientDirection": "to bottom",
+      "gradientStartColor": "#262626",
+      gradientEndColor: """"""""""""""""""""""""""""""""""""""""""""""#"5"c"5"c"5"c""","
+" " " " "}",
+    {
+      "id": "text-premium-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "Premium 텍스트",
+      "content": "Premium",
+      "position": {
+        "x": 393,
+        "y": 43
+      },
+      "size": {
+        "width": 80,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 44,
+        fontFamily": "Inter",
+        fontWeight": "500",
+        textAlign": "center",
+        lineHeight": 1.5,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "text-main-1749864145548",
+      "type": "text",
+      "textStyle": "heading",
+      styleName: "메인 제목",
+      content: "메인제목",
+      position: {
+        "x": 208,
+        "y": 147
+      },
+      "size": {
+        "width": 466,
+        "height": 40
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#F87171",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 96,
+        fontFamily: "Inter",
+        fontWeight": "bold",
+        textAlign: "center",
+        lineHeight: 1.2,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "text-copy-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      styleName: "메인 카피",
+      content: "메인카피1",
+      position: {
+        "x": 305,
+        "y": 264
+      },
+      "size": {
+        "width": 250,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 42,
+        fontFamily": "Inter",
+        "fontWeight": "400",
+        "textAlign": "center",
+        "lineHeight": 1.5,
+        "letterSpacing": 0,
+        "fontStyle": "normal",
+        "textDecoration": "none"
+      }
+    },
+    {
+      "id": "check1-0-1749864145548",
+      "type": "text",
+      "textStyle": "heading",
+      styleName: "체크마크1 1",
+      content: "✓",
+      "position": {
+        "x": 105.4117647058824,
+        "y": 793.2941176470588
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#EF4444",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 53,
+        fontFamily": "Inter",
+        fontWeight": "bold",
+        textAlign: "center",
+        lineHeight": 1,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "hook1-text-0-1749864145548",
+      "type": "text",
+      textStyle: "body",
+      styleName: "후킹1 텍스트 1",
+      content: "후킹1",
+      "position": {
+        "x": 65,
+        "y": 872
+      },
+      "size": {
+        "width": 100,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#374151",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 29,
+        fontFamily": "Inter",
+        "fontWeight": "500",
+        "textAlign": "center",
+        "lineHeight": 1.5,
+        "letterSpacing": 0,
+        "fontStyle": "normal",
+        "textDecoration": "none"
+      }
+    },
+    {
+      "id": "gray-bg-mid-1749864145548",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "중간 배경",
+      "position": {
+        "x": 0,
+        "y": 965
+      },
+      "size": {
+        "width": 860,
+        "height": 1224
+      },
+      "rotation": 0,
+      "zIndex": 6,
+      "backgroundColor": "#F3F4F6",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderStyle": "none",
+      "borderRadius": 0,
+      "opacity": 1,
+      "gradientEnabled": false
+    },
+    {
+      "id": "text-hook-title2-1749864145548",
+      "type": "text",
+      "textStyle": "heading",
+      "styleName": "후킹제목2",
+      "content": "후킹제목2",
+      "position": {
+        "x": 220,
+        "y": 1074
+      },
+      "size": {
+        "width": 500,
+        "height": 30
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#1F2937",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        "fontSize": 82,
+        fontFamily: "Inter",
+        fontWeight: "bold",
+        textAlign: "center",
+        lineHeight: 1.3,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "text-main2-1749864145548",
+      "type": "text",
+      textStyle: "heading",
+      styleName: "메인제목2",
+      "content": "메인제목",
+      "position": {
+        "x": 279,
+        "y": 1194
+      },
+      "size": {
+        width: 365,
+        height: 30
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#EF4444",
+      backgroundColor: "transparent",
+      computedStyle: {
+        fontSize: 69,
+        fontFamily: "Inter",
+        fontWeight: "bold",
+        textAlign: "center",
+        lineHeight: 1.2,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "text-hook-sentence-1749864145548",
+      "type": "text",
+      textStyle": "body",
+      styleName: "후킹문장",
+      content: "후킹문장",
+      position: {
+        "x": 335,
+        "y": 1292
+      },
+      "size": {
+        width: 190,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#4B5563",
+      "backgroundColor": "transparent",
+      computedStyle: {
+        fontSize: 33,
+        fontFamily: "Inter",
+        fontWeight: "400",
+        textAlign: "center",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "tag-bg-0-1749864145548",
+      "type": "shape",
+      shapeType": "rectangle",
+      name: "태그 배경 1",
+      "position": {
+        "x": 56,
+        "y": 1374
+      },
+      "size": {
+        width: 127,
+        "height": 59
+      },
+      "rotation": 0,
+      "zIndex": 12,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#D1D5DB",
+      borderWidth: 1,
+      borderStyle: "solid",
+      borderRadius: 26,
+      "opacity": 1,
+      gradientEnabled: false
+    },
+    {
+      "id": "tag-text-0-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      styleName: "태그 텍스트 1",
+      content: "#태그1",
+      "position": {
+        "x": 77,
+        "y": 1395
+      },
+      "size": {
+        "width": 86,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 13,
+      "color": "#4B5563",
+      "backgroundColor": "transparent",
+      computedStyle: {
+        fontSize: 18,
+        fontFamily: "Inter",
+        fontWeight: "500",
+        textAlign: "center",
+        lineHeight: 1.6,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "image-frame-circle-1749864145548",
+      "type": "imageFrame",
+      frameType: "circle",
+      "name": "원형 이미지 영역",
+      "position": {
+        "x": 330.7692307692307,
+        "y": 1449.2307692307693
+      },
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "rotation": 0,
+      "zIndex": 9,
+      "backgroundColor": "#E5E7EB",
+      "borderColor": "transparent",
+      borderWidth: 0,
+      borderStyle": "none",
+      "borderRadius": 100,
+      "opacity": 1,
+      "imageSrc": null
+    },
+    {
+      "id": "black-bg-1749864145548",
+      "type": "shape",
+      shapeType": "rectangle",
+      "name": "검은 배경",
+      "position": {
+        "x": -3,
+        "y": 2189
+      },
+      "size": {
+        "width": 863,
+        "height": 1850
+      },
+      "rotation": 0,
+      "zIndex": 2,
+      "backgroundColor": "#000000",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderStyle": "none",
+      "borderRadius": 0,
+      "opacity": 1,
+      "gradientEnabled": false
+    },
+    {
+      "id": "text-naver-1749864145548",
+      "type": "text",
+      "textStyle": "heading",
+      "styleName": "N사 인정 텍스트",
+      "content": "N사",
+      "position": {
+        "x": 177,
+        "y": 2292
+      },
+      "size": {
+        "width": 176,
+        "height": 24
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#22C55E",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 65,
+        fontFamily: "Inter",
+        fontWeight: "bold",
+        textAlign: "center",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "text-naver-reason-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "N사 인정 이유",
+      "content": "추천할 수 밖에 없는 이유!",
+      "position": {
+        "x": 217,
+        "y": 2386
+      },
+      "size": {
+        "width": 418,
+        "height": 29
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#DEB887",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 35,
+        fontFamily": "Inter",
+        fontWeight: "500",
+        "textAlign": "center",
+        "lineHeight": 1.5,
+        "letterSpacing": 0,
+        "fontStyle": "normal",
+        "textDecoration": "none"
+      }
+    },
+    {
+      "id": "rating-card-1749864145548",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "별점 카드",
+      "position": {
+        "x": 35,
+        "y": 2463
+      },
+      "size": {
+        "width": 358,
+        "height": 278
+      },
+      "rotation": 0,
+      "zIndex": 12,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderStyle": "none",
+      "borderRadius": 8,
+      "opacity": 1,
+      "gradientEnabled": false
+    },
+    {
+      "id": "text-rating-label-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "고객만족도 라벨",
+      "content": "고객만족도",
+      "position": {
+        "x": 142,
+        "y": 2555
+      },
+      "size": {
+        "width": 189,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#4B5563",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 31,
+        fontFamily: "Inter",
+        fontWeight": "600",
+        textAlign: "left",
+        lineHeight: 1.3,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "text-rating-value-1749864145548",
+      "type": "text",
+      textStyle": "heading",
+      styleName: "별점 값",
+      "content": "★★★★★",
+      "position": {
+        "x": 107,
+        "y": 2493
+      },
+      "size": {
+        "width": 150,
+        "height": 30
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#FF7F50",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 41,
+        fontFamily": "Inter",
+        fontWeight: "bold",
+        textAlign": "left",
+        lineHeight: 1.3,
+        letterSpacing": 0,
+        fontStyle: "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "text-reviews-label-1749864145548",
+      "type": "text",
+      textStyle": "body",
+      "styleName": "리뷰 수 라벨",
+      "content": "리뷰수",
+      "position": {
+        "x": 585,
+        "y": 2555
+      },
+      "size": {
+        "width": 118,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#4B5563",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 31,
+        fontFamily": "Inter",
+        fontWeight": "600",
+        "textAlign": "left",
+        lineHeight: 1.3,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "text-reviews-value-1749864145548",
+      "type": "text",
+      "textStyle": "heading",
+      "styleName": "리뷰 수 값",
+      "content": "1,565",
+      "position": {
+        "x": 499,
+        "y": 2630
+      },
+      "size": {
+        "width": 87,
+        height: 30
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#1F2937",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 92,
+        fontFamily: "Inter",
+        fontWeight: "bold",
+        textAlign: "left",
+        lineHeight: 1.3,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "review-bubble-2-1749864145548",
+      "type": "shape",
+      shapeType: "rectangle",
+      "name": "리뷰 말풍선 3",
+      "position": {
+        "x": 78,
+        "y": 2814
+      },
+      "size": {
+        width: 701,
+        height: 285
+      },
+      "rotation": 0,
+      "zIndex": 7,
+      "backgroundColor": "#1F2937",
+      "borderColor": "transparent",
+      borderWidth: 0,
+      borderStyle": "none",
+      "borderRadius": 8,
+      "opacity": 1,
+      "gradientEnabled": false
+    },
+    {
+      "id": "review-stars-2-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 별점 3",
+      "content": "★★★★★",
+      "position": {
+        "x": 90,
+        "y": 2873
+      },
+      "size": {
+        width: 80,
+        height: 15
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#FF7F50",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 51,
+        fontFamily: "Inter",
+        fontWeight: "400",
+        "textAlign": "left",
+        lineHeight": 1,
+        "letterSpacing": 0,
+        "fontStyle": "normal",
+        "textDecoration": "none"
+      }
+    },
+    {
+      "id": "review-text-2-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 텍스트 3",
+      "content": "리뷰1",
+      "position": {
+        "x": 118,
+        "y": 2935
+      },
+      "size": {
+        width: 622,
+        height: 108
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#D1D5DB",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize": 29,
+        fontFamily": "Inter",
+        fontWeight": "400",
+        "textAlign": "left",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "review-username-2-1749864145548",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 사용자명 3",
+      "content": "S3f****님",
+      "position": {
+        "x": 386,
+        "y": 2873
+      },
+      "size": {
+        "width": 351,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 14,
+      "color": "#9CA3AF",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 31,
+        fontFamily: "Inter",
+        fontWeight": "400",
+        "textAlign": "right",
+        lineHeight": 1,
+        "letterSpacing": 0,
+        fontStyle: "normal",
+        textDecoration": "none"
+      }
+    },
+    {
+      "id": "image-frame-1748617040550",
+      "type": "image-frame",
+      "shapeType": "rectangle-frame",
+      "name": "사각형 프레임",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 860,
+        "height": 745
+      },
+      "rotation": 0,
+      "zIndex": 4,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#FFFFFF",
+      "borderWidth": 2,
+      "borderStyle": "solid",
+      "borderRadius": 0,
+      "opacity": 1,
+      "imageSrc": null,
+      "imageFileName": null,
+      "imageOpacity": 1,
+      "imageFit": "cover",
+      "imageScale": 1,
+      "imageOffsetX": 0,
+      "imageOffsetY": 0
+    },
+    {
+      "id": "shape-1748617345462",
+      "type": "shape",
+      "shapeType": "vertical-line",
+      "name": "수직선",
+      "position": {
+        "x": 238,
+        "y": 791
+      },
+      "size": {
+        "width": 20,
+        "height": 101
+      },
+      "rotation": 0,
+      "zIndex": 53,
+      "backgroundColor": "transparent",
+      "borderColor": "#a79a9a",
+      "borderWidth": 20,
+      "borderStyle": "solid",
+      "borderRadius": 0,
+      "opacity": 1
+    },
+    {
+      "id": "text-1748617374142-bpmqw5hhs",
+      "type": "text",
+      "textStyle": "heading",
+      "styleName": "체크마크1 1",
+      "content": "✓",
+      "position": {
+        "x": 393,
+        "y": 791
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 1014,
+      "color": "#EF4444",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 53,
+        fontFamily": "Inter",
+        fontWeight: "bold",
+        textAlign: "center",
+        lineHeight": 1,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 96,
+        y: 798
+      }
+    },
+    {
+      "id": "text-1748617384791-oqv7dn59j",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "후킹1 텍스트 1",
+      "content": "후킹1",
+      "position": {
+        "x": 353,
+        "y": 872
+      },
+      "size": {
+        width: 100,
+        height: 20
+      },
+      "rotation": 0,
+      "zIndex": 1014,
+      "color": "#374151",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 29,
+        fontFamily: "Inter",
+        fontWeight: "500",
+        textAlign: "center",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 65.4117647058824,
+        y: 872.2941176470588
+      }
+    },
+    {
+      "id": "text-1748617387766-ej3lr2pa0",
+      "type": "text",
+      textStyle": "body",
+      styleName: "후킹1 텍스트 1",
+      content: "후킹1",
+      "position": {
+        "x": 644,
+        "y": 872
+      },
+      "size": {
+        width: 100,
+        height: 20
+      },
+      "rotation": 0,
+      "zIndex": 1014,
+      "color": "#374151",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 29,
+        fontFamily: "Inter",
+        fontWeight": "500",
+        textAlign: "center",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 65.4117647058824,
+        "y": 872.2941176470588
+      }
+    },
+    {
+      "id": "shape-1748617394206-ggv1cnr17",
+      "type": "shape",
+      shapeType: "vertical-line",
+      name": "수직선",
+      "position": {
+        "x": 548,
+        "y": 791
+      },
+      "size": {
+        "width": 20,
+        "height": 101
+      },
+      "rotation": 0,
+      "zIndex": 1053,
+      "backgroundColor": "transparent",
+      "borderColor": "#a79a9a",
+      "borderWidth": 20,
+      borderStyle: "solid",
+      "borderRadius": 0,
+      "opacity": 1,
+      "originalPosition": {
+        "x": 217.4117647058824,
+        "y": 791.2941176470588
+      }
+    },
+    {
+      "id": "text-1748617414710-kwjhbdqe7",
+      "type": "text",
+      textStyle": "heading",
+      "styleName": "���크마크1 1",
+      "content": "✓",
+      "position": {
+        "x": 684,
+        "y": 791
+      },
+      "size": {
+        "width": 20,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 2014,
+      "color": "#EF4444",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 53,
+        fontFamily": "Inter",
+        fontWeight: "bold",
+        textAlign: "center",
+        lineHeight: 1,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 393,
+        y: 791
+      }
+    },
+    {
+      "id": "shape-1748621595669-s38zgmvuv",
+      "type": "shape",
+      shapeType: "rectangle",
+      "name": "태그 배경 1",
+      "position": {
+        "x": 266,
+        "y": 1375
+      },
+      "size": {
+        width: 127,
+        height: 59
+      },
+      "rotation": 0,
+      "zIndex": 1012,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#D1D5DB",
+      borderWidth: 1,
+      borderStyle: "solid",
+      "borderRadius": 26,
+      "opacity": 1,
+      "gradientEnabled": false,
+      "originalPosition": {
+        "x": 56,
+        y: 1374
+      }
+    },
+    {
+      "id": "shape-1748621599388-535stvp1b",
+      "type": "shape",
+      shapeType": "rectangle",
+      "name": "태그 배경 1",
+      "position": {
+        "x": 478,
+        "y": 1375
+      },
+      "size": {
+        "width": 127,
+        "height": 59
+      },
+      "rotation": 0,
+      "zIndex": 2012,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#D1D5DB",
+      "borderWidth": 1,
+      "borderStyle": "solid",
+      "borderRadius": 26,
+      "opacity": 1,
+      "gradientEnabled": false,
+      "originalPosition": {
+        "x": 266,
+        "y": 1375
+      }
+    },
+    {
+      "id": "shape-1748621602356-ohzzwl2kf",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "태그 배경 1",
+      "position": {
+        "x": 671,
+        "y": 1375
+      },
+      "size": {
+        "width": 127,
+        "height": 59
+      },
+      "rotation": 0,
+      "zIndex": 3012,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#D1D5DB",
+      "borderWidth": 1,
+      "borderStyle": "solid",
+      "borderRadius": 26,
+      "opacity": 1,
+      "gradientEnabled": false,
+      "originalPosition": {
+        "x": 478,
+        "y": 1375
+      }
+    },
+    {
+      "id": "text-1748621622332-8p7bd0n75",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "태그 텍스트 1",
+      "content": "#태그1",
+      "position": {
+        "x": 287,
+        "y": 1395
+      },
+      "size": {
+        "width": 86,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 1013,
+      "color": "#4B5563",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        "fontSize": 18,
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "textAlign": "center",
+        "lineHeight": 1.6,
+        "letterSpacing": 0,
+        "fontStyle": "normal",
+        "textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 77,
+        "y": 1395
+      }
+    },
+    {
+      "id": "text-1748621624861-aa36qn1hf",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "태그 텍스트 1",
+      "content": "#태그1",
+      "position": {
+        "x": 499,
+        "y": 1395
+      },
+      "size": {
+        "width": 86,
+        "height": 20
+      },
+      "rotation": 0,
+      "zIndex": 2013,
+      "color": "#4B5563",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        "fontSize": 18,
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "textAlign": "center",
+        "lineHeight": 1.6,
+        "letterSpacing": 0,
+        "fontStyle": "normal",
+        "textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 287,
+        "y": 1395
+      }
+    },
+    {
+      "id": "text-1748621627332-8gu88zsfg",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "태그 텍스트 1",
+      "content": "#태그1",
+      "position": {
+        "x": 692,
+        "y": 1395
+      },
+      "size": {
+        width: 86,
+        height: 20
+      },
+      "rotation": 0,
+      "zIndex": 3013,
+      color: "#4B5563",
+      backgroundColor: "transparent",
+      computedStyle: {
+        fontSize: 18,
+        fontFamily: "Inter",
+        fontWeight: "500",
+        textAlign: "center",
+        lineHeight: 1.6,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      },
+      originalPosition: {
+        x: 499,
+        y: 1395
+      }
+    },
+    {
+      "id": "image-frame-1748621653852",
+      "type": "image-frame",
+      shapeType: "circle-frame",
+      name: "원형 프레임",
+      position: {
+        x: 107,
+        y: 1512
+      },
+      size: {
+        width: 637,
+        height: 609
+      },
+      rotation: 0,
+      zIndex: 55,
+      backgroundColor: "#FFFFFF",
+      borderColor: "#FFFFFF",
+      borderWidth: 2,
+      borderStyle: "solid",
+      borderRadius: 0,
+      opacity: 1,
+      imageSrc: null,
+      imageFileName: null,
+      imageOpacity: 1,
+      imageFit: "cover",
+      imageScale: 1,
+      imageOffsetX: 0,
+      imageOffsetY: 0
+    },
+    {
+      "id": "text-1748630254976-nq847bla8",
+      "type": "text",
+      textStyle: "heading",
+      styleName: "N사 인정 텍스트",
+      content: "에서도 인정한",
+      position: {
+        x: 314,
+        y: 2292
+      },
+      size: {
+        width: 400,
+        height: 24
+      },
+      rotation: 0,
+      zIndex: 1014,
+      color: "#FFFFFF",
+      backgroundColor: "transparent",
+      computedStyle: {
+        fontSize: 65,
+        fontFamily: "Inter",
+        fontWeight: "bold",
+        textAlign: "center",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      },
+      originalPosition: {
+        x: 329.39271255060726,
+        y: 2249.068825910931
+      }
+    },
+    {
+      "id": "shape-1748630530863-gmks6mq2o",
+      "type": "shape",
+      shapeType: "rectangle",
+      name: "별점 카드",
+      position: {
+        x: 459,
+        y: 2463
+      },
+      "size": {
+        width: 358,
+        height: 278
+      },
+      "rotation": 0,
+      zIndex: 3,
+      backgroundColor: "#FFFFFF",
+      borderColor: "transparent",
+      borderWidth: 0,
+      borderStyle: "none",
+      borderRadius: 8,
+      opacity: 1,
+      gradientEnabled: false,
+      originalPosition: {
+        x: 35,
+        y: 2463
+      }
+    },
+    {
+      "id": "text-1748630716599",
+      "type": "text",
+      textStyle: "text-4xl font-bold",
+      styleName: "제목 1",
+      content: "4.8",
+      position: {
+        x: 90,
+        y: 2620
+      },
+      "size": {
+        width: 263,
+        height: 50
+      },
+      "rotation": 0,
+      zIndex: 49,
+      color": "#000000",
+      backgroundColor: "transparent",
+      computedStyle: {
+        fontSize: 92,
+        fontFamily: "Inter",
+        fontWeight: "800",
+        textAlign: "center",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "shape-1748632126775-v2ujusu69",
+      "type": "shape",
+      shapeType: "rectangle",
+      name: "리뷰 말풍선 3",
+      "position": {
+        "x": 76,
+        "y": 3210
+      },
+      "size": {
+        width: 701,
+        height: 285
+      },
+      "rotation": 0,
+      "zIndex": 1007,
+      "backgroundColor": "#1F2937",
+      "borderColor": "transparent",
+      borderWidth: 0,
+      borderStyle": "none",
+      "borderRadius": 8,
+      "opacity": 1,
+      "gradientEnabled": false,
+      "originalPosition": {
+        x: 77,
+        y: 2814
+      }
+    },
+    {
+      "id": "text-1748632168102-17y3kedzc",
+      "type": "text",
+      textStyle": "body",
+      styleName: "리뷰 별점 3",
+      "content": "★★★★★",
+      "position": {
+        "x": 90,
+        y: 3257
+      },
+      "size": {
+        width: 80,
+        height: 15
+      },
+      "rotation": 0,
+      "zIndex": 1014,
+      "color": "#FF7F50",
+      "backgroundColor": "transparent",
+      computedStyle: {
+        fontSize: 51,
+        fontFamily: "Inter",
+        fontWeight: "400",
+        textAlign: "left",
+        lineHeight: 1,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      },
+      "originalPosition": {
+        x: 90,
+        y: 2873
+      }
+    },
+    {
+      "id": "text-1748632173926-n3sqco1o9",
+      "type": "text",
+      textStyle": "body",
+      styleName: "리뷰 텍스트 3",
+      "content": "리뷰2",
+      "position": {
+        x: 115,
+        y: 3298
+      },
+      "size": {
+        width: 622,
+        height: 108
+      },
+      "rotation": 0,
+      "zIndex": 1014,
+      "color": "#D1D5DB",
+      "backgroundColor": "transparent",
+      computedStyle: {
+        fontSize: 29,
+        fontFamily: "Inter",
+        fontWeight: "400",
+        textAlign: "left",
+        lineHeight: 1,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      },
+      "originalPosition": {
+        x: 122,
+        y: 2948
+      }
+    },
+    {
+      "id": "text-1748632204519-jn1yjvpic",
+      "type": "text",
+      textStyle": "body",
+      styleName: "리뷰 사용자명 3",
+      "content": "Hhe****님",
+      "position": {
+        x": 386,
+        y: 3263
+      },
+      "size": {
+        width: 351,
+        height: 20
+      },
+      "rotation": 0,
+      "zIndex": 1014,
+      "color": "#9CA3AF",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 31,
+        fontFamily: "Inter",
+        fontWeight": "400",
+        textAlign: "right",
+        lineHeight: 1,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        x: 386,
+        y: 2873
+      }
+    },
+    {
+      "id": "shape-1748632269687-dn5jlfm92",
+      "type": "shape",
+      shapeType: "rectangle",
+      name: "리뷰 말풍선 3",
+      "position": {
+        "x": 76,
+        "y": 3602
+      },
+      "size": {
+        width: 701,
+        height: 285
+      },
+      "rotation": 0,
+      "zIndex": 2007,
+      "backgroundColor": "#1F2937",
+      "borderColor": "transparent",
+      borderWidth": 0,
+      borderStyle": "none",
+      "borderRadius": 8,
+      "opacity": 1,
+      "gradientEnabled": false,
+      "originalPosition": {
+        x": 76,
+        y": 3210
+      }
+    },
+    {
+      "id": "text-1748632276687-k5091ja7k",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 별점 3",
+      "content": "★★★★★",
+      "position": {
+        x": 90,
+        y": 3648
+      },
+      "size": {
+        width: 80,
+        height: 15
+      },
+      "rotation": 0,
+      "zIndex": 2014,
+      "color": "#FF7F50",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize": 51,
+        fontFamily": "Inter",
+        fontWeight": "400",
+        textAlign": "left",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        x": 90,
+        y": 3257
+      }
+    },
+    {
+      "id": "text-1748632281311-rnkvp8bhm",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 텍스트 3",
+      "content": "리뷰3",
+      "position": {
+        "x": 116,
+        y: 3711
+      },
+      "size": {
+        width: 622,
+        height: 108
+      },
+      "rotation": 0,
+      zIndex": 2014,
+      color": "#D1D5DB",
+      backgroundColor: "transparent",
+      computedStyle: {
+        fontSize: 29,
+        fontFamily: "Inter",
+        fontWeight": "400",
+        textAlign": "left",
+        lineHeight": 1,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        x: 115,
+        y": 3298
+      }
+    },
+    {
+      "id": "text-1748632288550-jb5nvsv5t",
+      "type": "text",
+      textStyle": "body",
+      styleName": "리뷰 사용자명 3",
+      "content": "Qah****님",
+      "position": {
+        "x": 387,
+        y: 3648
+      },
+      "size": {
+        width: 351,
+        height: 20
+      },
+      "rotation": 0,
+      "zIndex": 2014,
+      "color": "#9CA3AF",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 31,
+        fontFamily": "Inter",
+        fontWeight": "400",
+        "textAlign": "right",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        x": 386,
+        y": 3263
+      }
+    },
+    {
+      "id": "shape-1748633300422",
+      "type": "shape",
+      "shapeType": "star-icon",
+      "name": "별 아이콘",
+      "position": {
+        "x": 605,
+        y: 2477
+      },
+      "size": {
+        "width": 66,
+        "height": 62
+      },
+      "rotation": 0,
+      "zIndex": 56,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#FFFFFF",
+      "borderWidth": 2,
+      "borderStyle": "solid",
+      "borderRadius": 0,
+      "opacity": 1
+    },
+    {
+      "id": "text-1748633473126",
+      "type": "text",
+      "textStyle": "text-4xl font-bold",
+      "styleName": "제목 1",
+      "content": "타사제품과 비교불가",
+      "position": {
+        "x": 147,
+        "y": 4154
+      },
+      "size": {
+        width: 591,
+        height: 50
+      },
+      "rotation": 0,
+      "zIndex": 57,
+      color: "#000000",
+      backgroundColor: "transparent",
+      computedStyle: {
+        fontSize: 62,
+        fontFamily: "Inter",
+        fontWeight: "700",
+        textAlign: "left",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle: "normal",
+        textDecoration: "none"
+      }
+    },
+    {
+      "id": "shape-1748633513358",
+      "type": "shape",
+      shapeType: "rectangle",
+      name: "사각형",
+      position: {
+        x": 116,
+        y: 4189
+      },
+      "size": {
+        width: 622,
+        height: 33
+      },
+      "rotation": 0,
+      zIndex: 1,
+      backgroundColor: "#FFA500",
+      borderColor: "#FFFFFF",
+      borderWidth: 2,
+      borderStyle: "solid",
+      borderRadius: 0,
+      opacity: 1,
+      children: [
+        "text-1748633529454"
+      ]
+    },
+    {
+      "id": "text-1748633576982-p8e9tc40u",
+      "type": "text",
+      textStyle": "text-4xl font-bold",
+      styleName: "제목 1",
+      "content": "불만족시",
+      "position": {
+        "x": 276,
+        "y": 4279
+      },
+      "size": {
+        width: 438,
+        height: 50
+      },
+      "rotation": 0,
+      "zIndex": 1057,
+      "color": "#000000",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 83,
+        fontFamily": "Inter",
+        fontWeight: "700",
+        textAlign": "left",
+        lineHeight: 1.5,
+        letterSpacing: 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 147,
+        "y": 4154
+      }
+    },
+    {
+      "id": "text-1748633605206-kuyd0678v",
+      "type": "text",
+      "textStyle": "text-4xl font-bold",
+      "styleName": "제목 1",
+      "content": "100% 환불",
+      "position": {
+        "x": 220,
+        "y": 4398
+      },
+      "size": {
+        width: 472,
+        height: 50
+      },
+      "rotation": 0,
+      "zIndex": 2057,
+      "color": "#FFA500",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 83,
+        fontFamily": "Inter",
+        fontWeight": "700",
+        textAlign": "left",
+        lineHeight": 1.5,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 266,
+        y": 4270
+      }
+    },
+    {
+      "id": "text-1748633633374-zy0l9pmqw",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 텍스트 3",
+      "content": "(맛과 크기로 인한 환불은 불가)",
+      "position": {
+        "x": 220,
+        "y": 4480
+      },
+      "size": {
+        "width": 454,
+        "height": 60
+      },
+      "rotation": 0,
+      "zIndex": 3014,
+      "color": "#808080",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 29,
+        fontFamily": "Inter",
+        fontWeight": "400",
+        "textAlign": "left",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 116,
+        y: 3711
+      }
+    },
+    {
+      "id": "text-1748633806662-m0qn5whdl",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 텍스트 3",
+      "content": "#태그1",
+      "position": {
+        "x": 133,
+        "y": 4563
+      },
+      "size": {
+        width: 133,
+        height: 60
+      },
+      "rotation": 0,
+      "zIndex": 4014,
+      "color": "#808080",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 29,
+        fontFamily: "Inter",
+        fontWeight: "400",
+        textAlign": "center",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        x: 238,
+        y: 4480
+      }
+    },
+    {
+      "id": "text-1748633828159-copv8r6a1",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 텍스트 3",
+      "content": "#태그2",
+      "position": {
+        "x": 361,
+        "y": 4563
+      },
+      "size": {
+        width: 133,
+        height: 60
+      },
+      "rotation": 0,
+      "zIndex": 5014,
+      "color": "#808080",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize: 29,
+        fontFamily": "Inter",
+        fontWeight": "400",
+        "textAlign": "center",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        "x": 133,
+        y": 4563
+      }
+    },
+    {
+      "id": "text-1748633833366-otx65utjp",
+      "type": "text",
+      "textStyle": "body",
+      "styleName": "리뷰 텍스트 3",
+      "content": "#태그3",
+      "position": {
+        "x": 559,
+        "y": 4563
+      },
+      "size": {
+        width: 133,
+        height: 60
+      },
+      "rotation": 0,
+      "zIndex": 6014,
+      "color": "#808080",
+      "backgroundColor": "transparent",
+      "computedStyle": {
+        fontSize": 29,
+        fontFamily": "Inter",
+        fontWeight": "400",
+        textAlign": "center",
+        lineHeight": 1,
+        letterSpacing": 0,
+        fontStyle": "normal",
+        textDecoration": "none"
+      },
+      "originalPosition": {
+        x": 314,
+        y: 4563
+      }
+    },
+    {
+      "id": "image-1749865442529",
+      "type": "image",
+      src: "data:image/jpeg;base64,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

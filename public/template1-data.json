@@ -1,0 +1,25 @@
+{
+  "canvasSize": {
+    "width": 860,
+    "height": 3000
+  },
+  "backgroundColor": "#FFFFFF",
+  "elements": [
+    {
+      "id": "image-apple-template-1748180606590",
+      "type": "image",
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%EC%82%AC%EA%B3%BC%20%ED%85%9C%ED%94%8C%EB%A6%BF.png-GSY5pV1E1Z7sVcUPbvqIxm63ChmdWT.jpeg",
+      "fileName": "apple-template.jpeg",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 778,
+        "height": 9725
+      },
+      "rotation": 0,
+      "zIndex": 1
+    }
+  ]
+}

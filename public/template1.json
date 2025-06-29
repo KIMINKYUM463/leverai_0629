@@ -1,0 +1,256 @@
+{
+  "canvasSize": {
+    "width": 860,
+    "height": 3000
+  },
+  "backgroundColor": "#FFFFFF",
+  "elements": [
+    {
+      "id": "image-checkerboard-1747921302918",
+      "type": "image",
+      "src": "/checkerboard-gradient.png",
+      "fileName": "checkerboard-gradient.png",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 860,
+        "height": 1200
+      },
+      "rotation": 0,
+      "zIndex": 1
+    },
+    {
+      "id": "text-premium-1747921302918",
+      "type": "text",
+      "textStyle": "text-4xl font-light text-center",
+      "styleName": "프리미엄 텍스트",
+      "content": "Premium",
+      "position": {
+        "x": 230,
+        "y": 80
+      },
+      "size": {
+        "width": 400,
+        "height": 60
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#FFFFFF",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-main-title-1747921302918",
+      "type": "text",
+      "textStyle": "text-6xl font-bold text-center",
+      "styleName": "메인제목",
+      "content": "사과",
+      "position": {
+        "x": 180,
+        "y": 180
+      },
+      "size": {
+        "width": 500,
+        "height": 100
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#FF3B30",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-sub-copy-1747921302918",
+      "type": "text",
+      "textStyle": "text-2xl text-center",
+      "styleName": "서브카피",
+      "content": "메인카피1",
+      "position": {
+        "x": 230,
+        "y": 330
+      },
+      "size": {
+        "width": 400,
+        "height": 50
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#FFFFFF",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "shape-photo-placeholder-1747921302918",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "사진영역",
+      "position": {
+        "x": 3,
+        "y": -15
+      },
+      "size": {
+        "width": 854,
+        "height": 1097
+      },
+      "rotation": 0,
+      "zIndex": 5,
+      "backgroundColor": "#CCCCCC",
+      "borderColor": "#AAAAAA",
+      "borderWidth": 1,
+      "borderStyle": "solid"
+    },
+    {
+      "id": "shape-divider1-1747921302918",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "구분선1",
+      "position": {
+        "x": 296,
+        "y": 1200
+      },
+      "size": {
+        "width": 2,
+        "height": 150
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "backgroundColor": "#DDDDDD",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderStyle": "solid"
+    },
+    {
+      "id": "shape-divider2-1747921302918",
+      "type": "shape",
+      "shapeType": "rectangle",
+      "name": "구분선2",
+      "position": {
+        "x": 562,
+        "y": 1200
+      },
+      "size": {
+        "width": 2,
+        "height": 150
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "backgroundColor": "#DDDDDD",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderStyle": "solid"
+    },
+    {
+      "id": "text-check1-1747921302918",
+      "type": "text",
+      "textStyle": "text-5xl font-bold text-center",
+      "styleName": "체크아이콘",
+      "content": "✓",
+      "position": {
+        "x": 173,
+        "y": 1220
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#FF3B30",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-hook-text1-1747921302918",
+      "type": "text",
+      "textStyle": "text-2xl font-medium text-center",
+      "styleName": "후킹텍스트",
+      "content": "후킹1",
+      "position": {
+        "x": 173,
+        "y": 1300
+      },
+      "size": {
+        "width": 50,
+        "height": 40
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#333333",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-check2-1747921302918",
+      "type": "text",
+      "textStyle": "text-5xl font-bold text-center",
+      "styleName": "체크아이콘",
+      "content": "✓",
+      "position": {
+        "x": 430,
+        "y": 1220
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#FF3B30",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-hook-text2-1747921302918",
+      "type": "text",
+      "textStyle": "text-2xl font-medium text-center",
+      "styleName": "후킹텍스트",
+      "content": "후킹2",
+      "position": {
+        "x": 430,
+        "y": 1300
+      },
+      "size": {
+        "width": 50,
+        "height": 40
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#333333",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-check3-1747921302918",
+      "type": "text",
+      "textStyle": "text-5xl font-bold text-center",
+      "styleName": "체크아이콘",
+      "content": "✓",
+      "position": {
+        "x": 687,
+        "y": 1220
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#FF3B30",
+      "backgroundColor": "transparent"
+    },
+    {
+      "id": "text-hook-text3-1747921302918",
+      "type": "text",
+      "textStyle": "text-2xl font-medium text-center",
+      "styleName": "후킹텍스트",
+      "content": "후킹3",
+      "position": {
+        "x": 687,
+        "y": 1300
+      },
+      "size": {
+        "width": 50,
+        "height": 40
+      },
+      "rotation": 0,
+      "zIndex": 10,
+      "color": "#333333",
+      "backgroundColor": "transparent"
+    }
+  ]
+}
