@@ -26,7 +26,6 @@ export function cn(...inputs: ClassValue[]): string {
  * @returns     Fully-qualified URL string, e.g. "https://acme.com/dashboard"
  */
 export function absoluteUrl(path: string): string {
-  // Strip multiple leading/trailing slashes for safety
   const sanitize = (str: string) => str.replace(/\/+$/, "").replace(/^\/+/, "")
 
   const publicBase = process.env.NEXT_PUBLIC_APP_URL ?? process.env.NEXT_PUBLIC_VERCEL_URL ?? ""
