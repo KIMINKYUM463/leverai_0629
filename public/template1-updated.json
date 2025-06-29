@@ -1,0 +1,44 @@
+{
+  "canvasSize": {
+    "width": 860,
+    "height": 3000
+  },
+  "backgroundColor": "#FFFFFF",
+  "elements": [
+    {
+      "id": "image-1748181836679",
+      "type": "image",
+      "src": "blob:https://kzmn783lc4mpvjw1u2cu.lite.vusercontent.net/b3101873-7585-450d-b666-a4fb709c9b93",
+      "fileName": "Frame 2 (4).png",
+      "position": {
+        "x": -9,
+        "y": -2.434782608695741
+      },
+      "size": {
+        "width": 880,
+        "height": 20302
+      },
+      "rotation": 0,
+      "zIndex": 1
+    },
+    {
+      "id": "text-1748181950775",
+      "type": "text",
+      "textStyle": "text-4xl font-bold",
+      "styleName": "제목 1",
+      "content": "제목을 입력하세요",
+      "position": {
+        "x": 167,
+        "y": 1595.4046377505895
+      },
+      "size": {
+        "width": 562,
+        "height": 55
+      },
+      "rotation": 0,
+      "zIndex": 2,
+      "color": "#000000",
+      "backgroundColor": "transparent"
+    }
+  ]
+}
