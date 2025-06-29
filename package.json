@@ -1,4 +1,13 @@
 {
+  "name": "agri-saas-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
   "dependencies": {
     "@ai-sdk/openai": "latest",
     "@emotion/is-prop-valid": "latest",
@@ -7,7 +16,6 @@
     "@radix-ui/react-tabs": "latest",
     "@supabase/auth-helpers-nextjs": "latest",
     "@supabase/supabase-js": "latest",
-    "@types/react": "latest",
     "@types/react-dom": "latest",
     "ai": "latest",
     "autoprefixer": "^10.4.16",
@@ -18,12 +26,12 @@
     "html2canvas": "latest",
     "lucide-react": "^0.454.0",
     "nanoid": "^5.0.6",
-    "next": "15.2.4",
+    "next": "14.2.16",
     "next-themes": "^0.3.1",
     "postcss": "^8.4.30",
-    "react": "^19",
-    "react-day-picker": "^8.8.3",
-    "react-dom": "^19",
+    "react": "^18",
+    "react-day-picker": "^8.10.1",
+    "react-dom": "^18",
     "react-dropzone": "latest",
     "react-markdown": "latest",
     "recharts": "latest",
@@ -34,9 +42,12 @@
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.2",
     "postcss": "^8.5",
+    "prettier": "3.3.1",
     "typescript": "^5"
   }
 }
