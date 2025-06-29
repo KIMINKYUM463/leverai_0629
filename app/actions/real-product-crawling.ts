@@ -4,11 +4,19 @@ import { openai } from "@ai-sdk/openai"
 import { generateObject } from "ai"
 import { z } from "zod"
 
-// 실제 환경에서는 이 import들이 필요합니다
-// import puppeteer from 'puppeteer'
-// import { Browser, Page } from 'puppeteer'
+interface ProductData {
+  title: string
+  price: string
+  originalPrice?: string
+  discount?: string
+  rating?: string
+  reviewCount?: string
+  seller?: string
+  delivery?: string
+  url: string
+  imageUrl?: string
+}
 
-// 크롤링 결과 스키마
 const ProductSchema = z.object({
   title: z.string(),
   price: z.string(),
@@ -43,156 +51,22 @@ const CrawlingResultSchema = z.object({
   }),
 })
 
-// 실제 쿠팡 크롤링 함수 (실제 환경에서 사용)
-async function crawlCoupang(productName: string) {
-  // 실제 환경에서는 아래 코드를 사용합니다
-  /*
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-accelerated-2d-canvas',
-      '--no-first-run',
-      '--no-zygote',
-      '--single-process',
-      '--disable-gpu'
-    ]
-  })
+const PriceRecommendationSchema = z.object({
+  recommendedPrices: z.array(
+    z.object({
+      option: z.string(),
+      recommendedPrice: z.number(),
+      reasoning: z.string(),
+      competitiveAdvantage: z.string(),
+      profitMargin: z.string(),
+    }),
+  ),
+  marketStrategy: z.string(),
+  pricingTips: z.array(z.string()),
+})
 
-  try {
-    const page = await browser.newPage()
-    
-    // User-Agent 설정으로 봇 탐지 우회
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
-    
-    // 쿠팡 검색 페이지로 이동
-    const searchUrl = `https://www.coupang.com/np/search?q=${encodeURIComponent(productName)}`
-    await page.goto(searchUrl, { waitUntil: 'networkidle2' })
-    
-    // 상품 목록 크롤링
-    const products = await page.evaluate(() => {
-      const productElements = document.querySelectorAll('.search-product')
-      const results = []
-      
-      for (let i = 0; i < Math.min(productElements.length, 10); i++) {
-        const element = productElements[i]
-        
-        const title = element.querySelector('.name')?.textContent?.trim() || ''
-        const price = element.querySelector('.price-value')?.textContent?.trim() || ''
-        const originalPrice = element.querySelector('.base-price')?.textContent?.trim() || ''
-        const discount = element.querySelector('.discount-percentage')?.textContent?.trim() || ''
-        const rating = element.querySelector('.rating')?.textContent?.trim() || ''
-        const reviewCount = element.querySelector('.rating-total-count')?.textContent?.trim() || ''
-        const imageUrl = element.querySelector('img')?.src || ''
-        const productUrl = element.querySelector('a')?.href || ''
-        
-        if (title && price) {
-          results.push({
-            title,
-            price,
-            originalPrice,
-            discount,
-            rating,
-            reviewCount,
-            imageUrl,
-            url: productUrl,
-            seller: '쿠팡',
-            delivery: '무료배송'
-          })
-        }
-      }
-      
-      return results
-    })
-    
-    return products
-  } finally {
-    await browser.close()
-  }
-  */
-
+async function crawlCoupang(productName: string): Promise<ProductData[]> {
   // 현재 환경에서는 모의 데이터 반환
-  return getMockCoupangData(productName)
-}
-
-// 실제 네이버 크롤링 함수 (실제 환경에서 사용)
-async function crawlNaver(productName: string) {
-  // 실제 환경에서는 아래 코드를 사용합니다
-  /*
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-accelerated-2d-canvas',
-      '--no-first-run',
-      '--no-zygote',
-      '--single-process',
-      '--disable-gpu'
-    ]
-  })
-
-  try {
-    const page = await browser.newPage()
-    
-    // User-Agent 설정
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
-    
-    // 네이버 쇼핑 검색 페이지로 이동
-    const searchUrl = `https://search.shopping.naver.com/search/all?query=${encodeURIComponent(productName)}`
-    await page.goto(searchUrl, { waitUntil: 'networkidle2' })
-    
-    // 상품 목록 크롤링
-    const products = await page.evaluate(() => {
-      const productElements = document.querySelectorAll('.product_item')
-      const results = []
-      
-      for (let i = 0; i < Math.min(productElements.length, 10); i++) {
-        const element = productElements[i]
-        
-        const title = element.querySelector('.product_title a')?.textContent?.trim() || ''
-        const price = element.querySelector('.price_num')?.textContent?.trim() || ''
-        const originalPrice = element.querySelector('.price_original')?.textContent?.trim() || ''
-        const discount = element.querySelector('.price_discount')?.textContent?.trim() || ''
-        const rating = element.querySelector('.product_grade .blind')?.textContent?.trim() || ''
-        const reviewCount = element.querySelector('.product_review_count .blind')?.textContent?.trim() || ''
-        const imageUrl = element.querySelector('img')?.src || ''
-        const productUrl = element.querySelector('.product_title a')?.href || ''
-        
-        if (title && price) {
-          results.push({
-            title,
-            price,
-            originalPrice,
-            discount,
-            rating,
-            reviewCount,
-            imageUrl,
-            url: productUrl,
-            seller: '네이버쇼핑',
-            delivery: '배송비별도'
-          })
-        }
-      }
-      
-      return results
-    })
-    
-    return products
-  } finally {
-    await browser.close()
-  }
-  */
-
-  // 현재 환경에서는 모의 데이터 반환
-  return getMockNaverData(productName)
-}
-
-// 모의 데이터 생성 함수들 (현재 환경용)
-function getMockCoupangData(productName: string) {
   return [
     {
       title: `${productName} 프리미엄 5kg 산지직송`,
@@ -255,7 +129,8 @@ function getMockCoupangData(productName: string) {
   ]
 }
 
-function getMockNaverData(productName: string) {
+async function crawlNaver(productName: string): Promise<ProductData[]> {
+  // 현재 환경에서는 모의 데이터 반환
   return [
     {
       title: `${productName} 농장직송 5kg 햇과일`,
@@ -318,21 +193,6 @@ function getMockNaverData(productName: string) {
   ]
 }
 
-// 가격 추천 스키마
-const PriceRecommendationSchema = z.object({
-  recommendedPrices: z.array(
-    z.object({
-      option: z.string(),
-      recommendedPrice: z.number(),
-      reasoning: z.string(),
-      competitiveAdvantage: z.string(),
-      profitMargin: z.string(),
-    }),
-  ),
-  marketStrategy: z.string(),
-  pricingTips: z.array(z.string()),
-})
-
 export async function realProductAnalysis(productName: string) {
   try {
     console.log(`🔍 ${productName} 상품 분석 시작...`)
@@ -340,12 +200,12 @@ export async function realProductAnalysis(productName: string) {
     // 1단계: 쿠팡 크롤링
     console.log("📦 쿠팡 데이터 수집 중...")
     const coupangProducts = await crawlCoupang(productName)
-    await new Promise((resolve) => setTimeout(resolve, 2000)) // 2초 대기
+    await new Promise((resolve) => setTimeout(resolve, 2000))
 
     // 2단계: 네이버 크롤링
     console.log("🛒 네이버 데이터 수집 중...")
     const naverProducts = await crawlNaver(productName)
-    await new Promise((resolve) => setTimeout(resolve, 2000)) // 2초 대기
+    await new Promise((resolve) => setTimeout(resolve, 2000))
 
     // 3단계: AI 데이터 분석
     console.log("🤖 AI 데이터 분석 중...")
@@ -385,7 +245,7 @@ export async function realProductAnalysis(productName: string) {
       `,
     })
 
-    await new Promise((resolve) => setTimeout(resolve, 1500)) // 1.5초 대기
+    await new Promise((resolve) => setTimeout(resolve, 1500))
 
     // 4단계: AI 가격 추천
     console.log("💡 AI 가격 추천 생성 중...")
@@ -411,7 +271,7 @@ export async function realProductAnalysis(productName: string) {
       `,
     })
 
-    await new Promise((resolve) => setTimeout(resolve, 2000)) // 2초 대기
+    await new Promise((resolve) => setTimeout(resolve, 2000))
 
     console.log("✅ 분석 완료!")
 
@@ -434,27 +294,4 @@ export async function realProductAnalysis(productName: string) {
       error: "상품 분석을 완료하는데 실패했습니다. 잠시 후 다시 시도해주세요.",
     }
   }
-}
-
-// 실제 환경에서 사용할 수 있는 크롤링 설정
-export const crawlingConfig = {
-  puppeteerOptions: {
-    headless: true,
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-accelerated-2d-canvas",
-      "--no-first-run",
-      "--no-zygote",
-      "--single-process",
-      "--disable-gpu",
-      "--disable-web-security",
-      "--disable-features=VizDisplayCompositor",
-    ],
-  },
-  userAgent:
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-  timeout: 30000,
-  waitForSelector: 3000,
 }
