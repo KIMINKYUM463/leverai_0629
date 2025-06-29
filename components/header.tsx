@@ -1,7 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { UserCircle, Bell, Search, LogOut } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import { UserCircle, Bell, LogOut } from "lucide-react"
 import Link from "next/link"
 import {
   DropdownMenu,
@@ -46,17 +45,6 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="hidden md:flex flex-1 mx-8">
-          <div className="relative w-full max-w-md">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
-            <Input
-              type="search"
-              placeholder="상품, 브랜드 검색..."
-              className="pl-9 bg-gray-50 border-gray-200 focus:bg-white transition-colors"
-            />
-          </div>
-        </div>
-
         <div className="flex items-center space-x-3">
           <Button variant="ghost" size="icon" className="text-gray-500 hover:text-emerald-600">
             <Bell size={20} />
@@ -67,7 +55,7 @@ export function Header() {
           ) : user ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="flex items-center gap-2 font-medium">
+                <Button variant="outline" className="flex items-center gap-2 font-medium bg-transparent">
                   <Avatar className="h-6 w-6">
                     <AvatarFallback className="bg-blue-100 text-blue-800 text-xs">{getUserInitial()}</AvatarFallback>
                   </Avatar>
@@ -89,7 +77,7 @@ export function Header() {
           ) : (
             <Button
               variant="outline"
-              className="flex items-center gap-2 font-medium text-gray-700 hover:text-emerald-600 hover:border-emerald-600 transition-colors"
+              className="flex items-center gap-2 font-medium text-gray-700 hover:text-emerald-600 hover:border-emerald-600 transition-colors bg-transparent"
               asChild
             >
               <Link href="/login">
