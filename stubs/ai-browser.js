@@ -1,25 +1,31 @@
-/**
- * Very small ESM stub for `ai` **and** `@ai-sdk/openai`.
- * Any attempt to use these utilities in the browser will throw —
- * you must call them from a Server Action / Route Handler.
- */
-const serverOnly = (name) => () => {
-  throw new Error(`"${name}" is server-only. Move this logic into a Server Action or Route Handler.`)
+// Browser-side stub for AI SDK to prevent server-only modules from being bundled
+// This file provides empty implementations that throw errors if accidentally called on client
+
+export function generateText() {
+  throw new Error("generateText can only be used on the server side")
 }
 
-// Re-export the helpers most commonly imported from `ai`
-export const generateObject = serverOnly("generateObject")
-export const generateText = serverOnly("generateText")
-export const streamText = serverOnly("streamText")
+export function generateObject() {
+  throw new Error("generateObject can only be used on the server side")
+}
 
-// And a default export so `import openai from ...` still resolves.
-const openai = serverOnly("openai")
-export { openai as default, openai }
+export function streamText() {
+  throw new Error("streamText can only be used on the server side")
+}
 
-// Empty placeholder types so `import type` statements compile.
-export const type = {}
+export function streamObject() {
+  throw new Error("streamObject can only be used on the server side")
+}
 
-/**
- * You can safely tree-shake this file out of the server bundle;
- * it exists purely to satisfy the browser build.
- */
+export function openai() {
+  throw new Error("openai can only be used on the server side")
+}
+
+// Default export for compatibility
+export default {
+  generateText,
+  generateObject,
+  streamText,
+  streamObject,
+  openai,
+}

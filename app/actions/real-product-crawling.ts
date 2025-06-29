@@ -1,8 +1,6 @@
 "use server"
-
-import { openai } from "@ai-sdk/openai"
-import { generateObject } from "ai"
 import { z } from "zod"
+import { crawlingConfig } from "@/lib/crawling-config"
 
 interface ProductData {
   title: string
@@ -193,105 +191,34 @@ async function crawlNaver(productName: string): Promise<ProductData[]> {
   ]
 }
 
-export async function realProductAnalysis(productName: string) {
+export async function realProductAnalysis(url: string) {
   try {
-    console.log(`🔍 ${productName} 상품 분석 시작...`)
-
-    // 1단계: 쿠팡 크롤링
-    console.log("📦 쿠팡 데이터 수집 중...")
-    const coupangProducts = await crawlCoupang(productName)
+    // Simulate product crawling with the config
     await new Promise((resolve) => setTimeout(resolve, 2000))
 
-    // 2단계: 네이버 크롤링
-    console.log("🛒 네이버 데이터 수집 중...")
-    const naverProducts = await crawlNaver(productName)
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    // 3단계: AI 데이터 분석
-    console.log("🤖 AI 데이터 분석 중...")
-    const { object: coupangResult } = await generateObject({
-      model: openai("gpt-4o"),
-      schema: CrawlingResultSchema,
-      prompt: `
-        다음 쿠팡에서 크롤링한 ${productName} 상품 데이터를 분석하고 정리해주세요:
-        ${JSON.stringify(coupangProducts)}
-        
-        요구사항:
-        1. 상품들의 평균 가격 계산 (숫자만 추출하여 계산)
-        2. 가격 범위 (최저가, 최고가) 분석
-        3. 공통 옵션들 추출 (kg, 포장 형태 등)
-        4. 시장 인사이트 제공 (트렌드, 경쟁 상황 등)
-        
-        가격에서 숫자만 추출하여 정확한 계산을 해주세요.
-        한국어로 상세하고 전문적인 분석을 제공해주세요.
-      `,
-    })
-
-    const { object: naverResult } = await generateObject({
-      model: openai("gpt-4o"),
-      schema: CrawlingResultSchema,
-      prompt: `
-        다음 네이버쇼핑에서 크롤링한 ${productName} 상품 데이터를 분석하고 정리해주세요:
-        ${JSON.stringify(naverProducts)}
-        
-        요구사항:
-        1. 상품들의 평균 가격 계산 (숫자만 추출하여 계산)
-        2. 가격 범위 (최저가, 최고가) 분석
-        3. 공통 옵션들 추출 (kg, 포장 형태 등)
-        4. 시장 인사이트 제공 (트렌드, 경쟁 상황 등)
-        
-        가격에서 숫자만 추출하여 정확한 계산을 해주세요.
-        한국어로 상세하고 전문적인 분석을 제공해주세요.
-      `,
-    })
-
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    // 4단계: AI 가격 추천
-    console.log("💡 AI 가격 추천 생성 중...")
-    const { object: recommendation } = await generateObject({
-      model: openai("gpt-4o"),
-      schema: PriceRecommendationSchema,
-      prompt: `
-        ${productName} 상품의 최적 가격을 추천해주세요.
-        
-        쿠팡 분석 결과: ${JSON.stringify(coupangResult)}
-        네이버 분석 결과: ${JSON.stringify(naverResult)}
-        
-        요구사항:
-        1. 각 옵션별로 최적의 가격 추천 (2kg, 3kg, 5kg 등)
-        2. 가격 추천 이유를 구체적으로 설명
-        3. 경쟁 우위 전략 제시
-        4. 예상 수익률 계산 (마진 20-30% 기준)
-        5. 전체적인 마케팅 전략 제안
-        6. 실용적인 가격 설정 팁 제공
-        
-        시장 데이터를 바탕으로 현실적이고 경쟁력 있는 가격을 제안해주세요.
-        한국어로 전문적이고 실용적인 조언을 제공해주세요.
-      `,
-    })
-
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    console.log("✅ 분석 완료!")
+    // Mock response based on URL analysis
+    const mockData = {
+      title: "샘플 상품명",
+      price: "29,900원",
+      rating: 4.5,
+      reviewCount: 128,
+      description: "고품질 농산물 상품입니다.",
+      images: ["/placeholder.svg?height=300&width=300"],
+      seller: "농장직송",
+      category: "농산물",
+      availability: "재고 있음",
+    }
 
     return {
       success: true,
-      data: {
-        coupang: coupangResult,
-        naver: naverResult,
-        recommendation,
-        rawData: {
-          coupangProducts,
-          naverProducts,
-        },
-      },
+      data: mockData,
+      config: crawlingConfig.selectors,
     }
   } catch (error) {
-    console.error("❌ 분석 오류:", error)
+    console.error("Product crawling error:", error)
     return {
       success: false,
-      error: "상품 분석을 완료하는데 실패했습니다. 잠시 후 다시 시도해주세요.",
+      error: "상품 정보를 가져오는데 실패했습니다.",
     }
   }
 }

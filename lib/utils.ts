@@ -6,41 +6,33 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function absoluteUrl(path: string) {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || process.env.NEXT_PUBLIC_VERCEL_URL
-
-  if (!baseUrl) {
-    return `http://localhost:3000${path}`
-  }
-
-  const url = baseUrl.startsWith("http") ? baseUrl : `https://${baseUrl}`
-  const normalizedPath = path.startsWith("/") ? path : `/${path}`
-
-  return `${url}${normalizedPath}`
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || process.env.NEXT_PUBLIC_VERCEL_URL || "http://localhost:3000"
+  return `${baseUrl}${path}`
 }
 
-export function formatPrice(price: number): string {
+export function formatDate(date: Date | string | number) {
+  return new Intl.DateTimeFormat("ko-KR", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(date))
+}
+
+export function formatPrice(
+  price: number | string,
+  options: {
+    currency?: "USD" | "EUR" | "GBP" | "BDT" | "KRW"
+    notation?: Intl.NumberFormatOptions["notation"]
+  } = {},
+) {
+  const { currency = "KRW", notation = "standard" } = options
+
+  const numericPrice = typeof price === "string" ? Number.parseFloat(price) : price
+
   return new Intl.NumberFormat("ko-KR", {
     style: "currency",
-    currency: "KRW",
-  }).format(price)
-}
-
-export function formatNumber(num: number): string {
-  return new Intl.NumberFormat("ko-KR").format(num)
-}
-
-export function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, "")
-    .replace(/[\s_-]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-}
-
-export function truncate(str: string, length: number): string {
-  return str.length > length ? `${str.substring(0, length)}...` : str
-}
-
-export function capitalize(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1)
+    currency,
+    notation,
+    maximumFractionDigits: 2,
+  }).format(numericPrice)
 }
